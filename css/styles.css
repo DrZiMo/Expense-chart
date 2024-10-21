@@ -1,0 +1,53 @@
+@import url('https://fonts.google.com/specimen/DM+Sans');
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--cream);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: min(500px, 90%);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.balance-part {
+    background-color: var(--soft-red);
+    width: 100%;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.small-text {
+    font-size: .9rem;
+    font-weight: var(--fw-regular);
+}
+
+.balance {
+    font-size: 1.7rem;
+    font-weight: var(--fw-bold);
+    padding: 8px 0 0;
+}
