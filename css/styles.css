@@ -12,6 +12,11 @@
     --fw-bold: 700;
 }
 
+*,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
@@ -50,4 +55,74 @@ body {
     font-size: 1.7rem;
     font-weight: var(--fw-bold);
     padding: 8px 0 0;
+}
+
+.chart-part {
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 14px;
+}
+
+.chart-title {
+    font-size: 1.8rem;
+    font-weight: var(--fw-bold);
+}
+
+.charts {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    height: 210px;
+}
+
+.chart .chart-rect {
+    width: 100%;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+    height: 130px;
+    position: relative;
+}
+
+.chart .chart-rect::before {
+    content: '57.01';
+    width: fit-content;
+    height: 20px;
+    background-color: var(--dark-brown);
+    font-size: .9rem;
+    padding: 8px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chart:nth-child(2) .chart-rect {
+    height: 50px;
+}
+
+.chart:nth-child(3) .chart-rect {
+    height: 90px;
+}
+
+.chart:nth-child(4) .chart-rect {
+    height: 10px;
+}
+
+.chart-day {
+    color: var(--medium-brown);
 }
