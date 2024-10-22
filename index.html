@@ -7,30 +7,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <script defer src="script.js"></script>
+
   <title>Expenses chart component</title>
 </head>
 
 <body>
-
-  <!-- My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month -->
-
   <div class="container">
     <div class="balance-part">
       <div class="balance-text-part">
@@ -44,38 +26,18 @@
     <div class="chart-part">
       <div class="chart-title">Spending - Last 7 days</div>
       <div class="charts">
-        <div class="chart">
-          <div class="chart-rect"></div>
-          <div class="chart-day">sat</div>
-        </div>
-        <div class="chart">
-          <div class="chart-rect"></div>
-          <div class="chart-day">sun</div>
-        </div>
-        <div class="chart">
-          <div class="chart-value"></div>
-          <div class="chart-rect"></div>
-          <div class="chart-day">sun</div>
-        </div>
-        <div class="chart">
-          <div class="chart-rect"></div>
-          <div class="chart-day">sun</div>
-        </div>
-        <div class="chart">
-          <div class="chart-rect"></div>
-          <div class="chart-day">sun</div>
-        </div>
-        <div class="chart">
-          <div class="chart-rect"></div>
-          <div class="chart-day">sun</div>
-        </div>
-        <div class="chart">
-          <div class="chart-rect"></div>
-          <div class="chart-day">sun</div>
-        </div>
       </div>
       <div class="divider"></div>
-
+      <div class="bottom-part">
+        <div class="total-part">
+          <div class="small-text">Total this month</div>
+          <div class="total-amount">$478.33</div>
+        </div>
+        <div class="from-last-month">
+          <div class="percentage">+2.4%</div>
+          <div class="small-text">from the last month</div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
